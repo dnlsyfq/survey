@@ -2,7 +2,7 @@
 --  set mode to csv 
 .mode csv
 
-DROP TABLE IF EXISTS recent_grads;
+-- DROP TABLE IF EXISTS recent_grads;
 -- CREATE TABLE recent_grads(
 --     -- "ID" INTEGER PRIMARY KEY AUTOINCREMENT,
 --     "RANK" INTEGER,
@@ -28,8 +28,18 @@ DROP TABLE IF EXISTS recent_grads;
 --     "LOW_WAGE_JOBS" INTEGER
 -- );    
 
+-- jobs.db
+
 .import C:/Users/Dan/Code/PYTHON/survey/recent-grads.csv recent_grads
 .mode column
--- .headers on
+.headers on
 
-select * from recent_grads limit 1;
+
+
+.open jobs.db
+.tables 
+
+
+.open jobs2.db
+.tables
+
